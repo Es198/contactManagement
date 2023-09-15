@@ -4,22 +4,32 @@ import Contact.Contact;
 
 import java.util.HashMap;
 
-public class WorkContactCategory {
+public class WorkContactCategory implements IContactCategories {
      HashMap<String, Contact> workContacts = new HashMap<>();
 
-     addContact(Contact contact){
+
+     @Override
+     public void addContact(Contact contact) {
+          workContacts.put(contact.getName(), contact);
+     }
+
+
+     @Override
+     public void removeContact(String contactName) {
+          workContacts.remove(contactName);
+     }
+
+     @Override
+     public void viewContacts() {
+          for (Contact contact : workContacts.values()) {
+               System.out.println(contact);
+          }
 
      }
 
-     removeContact(String contactName){
+     @Override
+     public HashMap<String, Contact> searchContacts(String keyword) {
 
-     }
-
-     viewContacts(){
-
-     }
-
-     searchContacts(){
-
+          return workContacts;
      }
 }
