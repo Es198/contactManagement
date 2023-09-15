@@ -1,6 +1,5 @@
 package Contact;
 
-
 public class Contact {
 
     private String name;
@@ -38,7 +37,9 @@ public class Contact {
     }
 
     public String toString() {
+
         return "name: " + name + ", " + "Email: " + email + ", " + "Phone number: " + phoneNumber;
+
     }
 }
 

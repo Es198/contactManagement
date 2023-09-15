@@ -3,7 +3,7 @@ package ContactCategories;
 import Contact.Contact;
 import java.util.HashMap;
 
-public class PersonalContactCategory extends ContactCategory {
+public class PersonalContactCategory implements IContactCategories {
     HashMap<String,Contact> personalContacts = new HashMap<String, Contact>();
 
     public void addContact(Contact contact){
