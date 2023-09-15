@@ -24,12 +24,10 @@ public class WorkContactCategory implements IContactCategories {
           for (Contact contact : workContacts.values()) {
                System.out.println(contact);
           }
-
      }
 
      @Override
-     public HashMap<String, Contact> searchContacts(String keyword) {
-
-          return workContacts;
+     public Contact searchContacts(String name) {
+          return workContacts.get(name);
      }
 }
