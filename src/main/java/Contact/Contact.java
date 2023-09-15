@@ -1,6 +1,7 @@
 package Contact;
 
-public class Contact {
+public class
+Contact {
     public String getName() {
         return name;
     }

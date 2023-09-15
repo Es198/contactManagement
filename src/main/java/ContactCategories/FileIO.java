@@ -20,10 +20,6 @@ public class Contact implements FileIO {
 
     @Override
     public String toString() {
-        return "Contact{ " +
-                "name='" + name + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
-                '}';
+        return "Contact{ " + name + "\"" + "phoneNumber " + phoneNumber + "}";
     }
-
 }
