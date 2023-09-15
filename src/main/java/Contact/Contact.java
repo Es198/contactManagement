@@ -1,6 +1,12 @@
 package Contact;
 
 public class Contact {
+
+    private String name;
+    private String email;
+    private int phoneNumber;
+    private String contactCategory;
+
     public String getName() {
         return name;
     }
@@ -25,18 +31,23 @@ public class Contact {
         this.phoneNumber = phoneNumber;
     }
 
-    private String name;
-    private String email;
-    private int phoneNumber;
+    public String getContactCategory() {
+        return contactCategory;
+    }
 
+    public void setContactCategory(String contactCategory) {
+        this.contactCategory = contactCategory;
+    }
 
-    public Contact(String name, String email, int phoneNumber) {
+    public Contact(String name, String email, int phoneNumber, String contactCategory) {
         this.name = name;
         this.email = email;
         this.phoneNumber = phoneNumber;
+        this.contactCategory = contactCategory;
     }
 
     public String toString() {
-        return "name: " + name + ", " + "Email: " + email + ", " + "Phone number: " + phoneNumber ;
+        return "name: " + name + ", " + "Email: " + email + ", " + "Phone number: " + phoneNumber + ", "
+                + "Contact category: " + contactCategory;
     }
 }
