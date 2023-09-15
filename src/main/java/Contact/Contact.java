@@ -1,6 +1,12 @@
 package Contact;
 
 public class Contact {
+
+    private String name;
+    private String email;
+    private int phoneNumber;
+
+
     public String getName() {
         return name;
     }
@@ -24,11 +30,6 @@ public class Contact {
     public void setPhoneNumber(int phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
-
-    private String name;
-    private String email;
-    private int phoneNumber;
-
 
     public Contact(String name, String email, int phoneNumber) {
         this.name = name;
