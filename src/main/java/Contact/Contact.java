@@ -36,4 +36,8 @@ Contact {
         this.email = email;
         this.phoneNumber = phoneNumber;
     }
+
+    public String toString() {
+        return "name: " + name + ", " + "Email: " + email + ", " + "Phone number: " + phoneNumber ;
+    }
 }

@@ -9,6 +9,6 @@ public interface IContactCategories {
         void addContact(Contact contact);
         void removeContact(String contactName);
         void viewContacts();
-        HashMap<String, Contact> searchContacts(String keyword);
+        Contact searchContacts(String keyword);
 
 }
