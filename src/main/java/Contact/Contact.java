@@ -1,11 +1,11 @@
 package Contact;
 
+
 public class Contact {
 
     private String name;
     private String email;
     private int phoneNumber;
-
 
     public String getName() {
         return name;
@@ -36,7 +36,9 @@ public class Contact {
         this.email = email;
         this.phoneNumber = phoneNumber;
     }
+
     public String toString() {
-        return "name: " + name + ", " + "Email: " + email + ", " + "Phone number: " + phoneNumber ;
+        return "name: " + name + ", " + "Email: " + email + ", " + "Phone number: " + phoneNumber;
     }
 }
+
