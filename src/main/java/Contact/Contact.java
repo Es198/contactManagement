@@ -5,7 +5,9 @@ public class Contact {
     private String name;
     private String email;
     private int phoneNumber;
+
     private String contactCategory;
+
 
     public String getName() {
         return name;
@@ -40,6 +42,7 @@ public class Contact {
     }
 
     public Contact(String name, String email, int phoneNumber, String contactCategory) {
+
         this.name = name;
         this.email = email;
         this.phoneNumber = phoneNumber;
@@ -51,3 +54,4 @@ public class Contact {
                 + "Contact category: " + contactCategory;
     }
 }
+
