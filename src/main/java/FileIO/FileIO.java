@@ -1,7 +1,7 @@
-package ContactCategories;
+package FileIO;
 import java.io.Serializable;
 
-public class Contact implements FileIO {
+public class FileIO {
     private String name;
     private String phoneNumber;
 
